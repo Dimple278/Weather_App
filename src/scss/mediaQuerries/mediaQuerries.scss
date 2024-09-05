@@ -1,0 +1,57 @@
+@media (max-width: 1500px) {
+  .dashboard {
+    flex-direction: column;
+
+    background: none;
+
+    &__footer {
+      gap: toRem(30);
+
+      margin-top: auto;
+
+      padding: toRem(200) toRem(100) toRem(100) toRem(100);
+
+      flex-grow: 2;
+    }
+  }
+
+  h1 {
+    font-size: toRem(100);
+
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: toRem(40);
+
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: toRem(16);
+
+    font-weight: 500;
+  }
+
+  h4 {
+    font-size: toRem(12);
+
+    font-weight: 400;
+  }
+
+  p {
+    font-size: toRem(14);
+
+    font-weight: 400;
+
+    line-height: toRem(21);
+  }
+
+  ::placeholder {
+    font-family: var(--main-font);
+
+    font-size: toRem(16);
+
+    color: white;
+  }
+}

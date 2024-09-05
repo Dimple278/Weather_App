@@ -1,0 +1,128 @@
+.dashboard-wrapper {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .dashboard {
+    height: 100vh;
+    position: relative;
+
+    &__header {
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      padding: 2.3rem 7.5rem;
+      overflow-x: hidden;
+    }
+
+    &__weatherdisplay {
+      gap: 1.25rem;
+      margin-top: auto;
+      padding: 6.25rem;
+      flex-grow: 1;
+
+      .temp-toggle-button {
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        color: white;
+        cursor: pointer;
+        margin-left: 20px;
+        transition: background-color 0.3s, color 0.3s;
+        border-radius: 5px;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          color: white;
+        }
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+
+    &__sidebar {
+      backdrop-filter: blur(10px);
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-left: 1px solid rgba(255, 255, 255, 0.2);
+      flex-basis: 43.75rem;
+      padding: 8.19rem 12.5rem 0 2.19rem;
+      gap: 3.125rem;
+    }
+  }
+
+  .searchBar {
+    z-index: 10;
+    padding: 0.625rem 2.5rem 0.625rem 0.938rem;
+    background-color: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    width: 28.125rem;
+  }
+
+  .search-wrapper {
+    z-index: 10;
+    padding-right: 6.25rem;
+  }
+
+  .search-icon {
+    position: relative;
+    bottom: 2.625rem;
+    left: 26.25rem;
+    cursor: pointer;
+  }
+
+  .search-history-button {
+    background-color: transparent;
+    border: 2px solid white;
+
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    border-radius: 5px;
+    padding: 2%;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  .suggestion {
+    position: absolute;
+    // background-color: rgba(3, 3, 3, 0.8);
+    color: #fff;
+    list-style: none;
+    padding: 0.5rem;
+    margin: 0;
+    border-radius: 0.5rem;
+    width: 28.125rem;
+
+    &__item {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}

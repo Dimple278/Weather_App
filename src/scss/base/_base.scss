@@ -1,0 +1,40 @@
+body {
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+  // background-image: url("bg.jpg");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  // background-attachment: fixed;
+}
+
+h1 {
+  font-size: toRem(143);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: toRem(60);
+  font-weight: 400;
+}
+
+h3 {
+  font-size: toRem(18);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: toRem(14);
+  font-weight: 400;
+}
+
+p {
+  font-size: toRem(18);
+  font-weight: 400;
+  line-height: toRem(21);
+}
+
+::placeholder {
+  font-family: var(--main-font);
+  font-size: toRem(20);
+}

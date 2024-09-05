@@ -1,0 +1,47 @@
+.alert {
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  // position: relative;
+
+  &__emoji {
+    margin-right: 8px;
+    font-size: 26px;
+  }
+
+  &__close {
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    margin-left: 16px;
+  }
+
+  &--error {
+    background-color: #e74c3c;
+    border: 1px solid #c0392b;
+    color: #ffffff;
+  }
+
+  &--success {
+    background-color: #28a745;
+    border: 1px solid #218838;
+    color: #ffffff;
+  }
+
+  &--warning {
+    background-color: #f0ad4e;
+    border: 1px solid #ec971f;
+    color: #ffffff;
+  }
+
+  &--info {
+    background-color: #17a2b8;
+    border: 1px solid #117a8b;
+    color: #ffffff;
+  }
+}
